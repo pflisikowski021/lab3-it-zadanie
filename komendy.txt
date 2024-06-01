@@ -127,3 +127,82 @@ git pull
 
 # 1.5
 
+git clone
+git fakeTeamwork 2
+git commit
+git pull
+
+# 1.6
+
+git commit
+git commit
+git push origin main
+
+# 1.7
+
+git clone
+git commit
+git fakeTeamwork 1
+git commit
+git pull --rebase
+git push
+
+# 1.8
+
+git checkout -b feature
+git push origin feature
+git checkout main
+git reset HEAD^
+git checkout feature
+
+# 2.1
+
+git fetch
+git rebase o/main side1
+git rebase side1 side2
+git rebase side2 side3
+git rebase side3 main
+git push
+
+# 2.2
+
+git checkout main
+git pull
+git merge side1
+git merge side2
+git merge side3
+git push
+
+# 2.3
+
+git checkout -b side o/main
+git commit
+git pull --rebase
+git push
+
+# 2.4
+
+git push origin main
+git push origin foo
+
+# 2.5
+
+git push origin main^:foo
+git push origin foo:main
+
+# 2.6
+
+git fetch origin c3:foo
+git fetch origin c6:main
+git checkout foo
+git merge main
+
+# 2.7
+
+git push origin :foo
+git fetch origin :branch
+
+# 2.8
+
+git pull origin c3:foo
+git pull origin c2:side
